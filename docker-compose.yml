@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    pact_consumer:
+        build:
+            context: .
+            dockerfile: ./docker/Dockerfile.fpm
+        volumes:
+            - ./:/var/www/app

@@ -1,0 +1,29 @@
+{
+  "name": "judimator/pact_consumser",
+  "license": "MIT",
+  "type": "project",
+  "description": "PACT Consumer Demo Application",
+  "autoload": {
+    "psr-4": {
+      "App\\":  "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "App\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "pact-foundation/pact-php": "10.0.0-alpha2",
+    "phpunit/phpunit": "^10.3"
+  },
+  "config": {
+    "allow-plugins": {
+      "tienvx/composer-downloads-plugin": true
+    }
+  },
+  "require": {
+    "guzzlehttp/guzzle": "^7.8"
+  }
+}
